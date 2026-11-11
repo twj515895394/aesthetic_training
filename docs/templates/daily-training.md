@@ -4,6 +4,9 @@ date: YYYY-MM-DD
 week: W01
 day: D01
 topic: 视觉焦点
+tags: [visual-focus, composition]
+related_concepts: [visual-focus]
+local_media: [] # 本机相对路径；不推送 GitHub
 main_case_id: case-0001
 compare_case_id: case-0002
 practice_level: L1
@@ -11,6 +14,16 @@ status: draft
 ---
 
 # W01-D01｜训练主题
+
+## 本次案例、知识点与路径
+
+> 训练 ID 在整个首轮课程中保持稳定，`date` 单独记录真实日期。YAML 的 `main_case_id`、`compare_case_id` 和 `related_concepts` 用于搜索；在这里补充指向**已经建立**的案例卡和知识卡的相对 Markdown 链接。
+
+- 主案例资料卡：
+- 对照案例资料卡：
+- 相关知识点卡：
+- 参考作品可公开的来源 URL：
+- 本地素材路径（可选）：
 
 ## 今日目标
 
@@ -65,5 +78,7 @@ status: draft
   - 可讨论的解释：
   - 下一步可执行改进：
 - 新知识首次示范 / 熟悉知识自主判断：（按实际阶段选择填写）
+
+> 索引约定：[13 元数据与索引规范](../13-metadata-and-indexing.md)。实际归档后将本文件加入 `practices/index.md`，同步案例卡和知识卡的反向关联。
 
 > **归档规则（D-012 已确认）**：AI 仅据实际对话、已看到的图片与已发生的实验生成草稿；不补造学员想法和练习结果。学员审核确认后，才能将 Markdown 归档到 GitHub。以上为完整模板，除双层分工、真实性与审核原则外，各字段仍可随实战精简。
