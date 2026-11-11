@@ -75,7 +75,7 @@ compare_case_id: case-0002
 related_concepts: [visual-focus]
 practice_level: L1
 local_media: []
-status: draft
+status: not_started # 课程状态范例，真实状态按进度更新
 ---
 ```
 
@@ -88,7 +88,7 @@ status: draft
 - **自由分类**使用 `tags`（数组）：只用于作品风格、构图、情绪等额外关键词，不重复塞入大量无关词；优先复用已存在词汇。
 - **关联对象**使用 `related_sessions`、`cases`、`sessions` 和训练卡中的 `main_case_id`、`compare_case_id`，均填 **ID 而非文件路径**。
 - **本机媒体路径**使用 `local_media`，填写相对于仓库根目录的路径，限制在本机使用；不当成 GitHub 图片 URL。
-- **状态**建议 `draft` / `reviewed` 等，训练记录的正式归档须先经学员审核（D-012）；具体状态机待后续如有必要再定。
+- **训练会话状态**已由 D-018 确定进度驱动与审核后计入完成的原则；首版状态字段建议为 `not_started`、`in_progress`、`pending_review`、`completed`。一般案例/知识卡的 `draft`/`reviewed` 与课程完成状态**不是同一概念**。详见 [14 课程会话与进度管理](14-session-and-progress.md)。
 
 如出现新概念或跨领域术语，以一个新知识点 ID 为准；另名和中英文译法可写入知识卡正文，不任意产生重复概念卡。
 
@@ -121,4 +121,4 @@ status: draft
 
 ## 8. 后续依赖
 
-**Q-008** 将讨论如何开始、继续、补课并进入每周复盘；训练的进度与完成状态需要通过本规范的稳定 ID 和可验证练习记录追踪。
+**Q-008 已确认（D-018）**：训练采用按实际完成进度推进、暂停续接与审核归档的会话机制；进度主索引见 [学习进度](../practices/progress.md)，操作规范见 [14 课程会话与进度管理](14-session-and-progress.md)。
