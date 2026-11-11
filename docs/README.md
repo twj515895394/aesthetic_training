@@ -17,7 +17,8 @@
 11. [11 案例获取与积累](11-case-acquisition.md)：基础候选库、按课补充、资料卡及来源核验。
 12. [12 本地媒体管理](12-local-asset-storage.md)：clone 到本机、`local-assets/`、`.gitignore` 防误提交及本地文件关联。
 13. [13 元数据与索引规范](13-metadata-and-indexing.md)：稳定 ID、YAML 标签、双向链接与索引入口。
-14. [训练模板](templates/README.md)：每日训练、案例分析、知识卡、周复盘。
+14. [14 课程会话与进度管理](14-session-and-progress.md)：按实际完成进度推进、暂停续接、补课和每周复盘。
+15. [训练模板](templates/README.md)：每日训练、案例分析、知识卡、周复盘。
 
 ## Spec-as-Learning 工作方式
 
@@ -48,6 +49,7 @@
 - [x] Grill：基础案例库 + 按需补充（已确认 C，D-015）
 - [x] Grill：本地维护媒体大文件，GitHub 不同步大文件（已确认 D-016）
 - [x] Grill：Markdown 元数据 + 标签 + 交叉关联（已确认 C，D-017）
-- [ ] Grill：每日课程启动、续接、补课与复盘的交互机制（Q-008）
+- [x] Grill：进度驱动 + 暂停续接 + 补课（已确认 C，D-018）
+- [ ] Grill：是否开启训练提醒与周期汇报（Q-009）
 - [ ] Grill：跨领域案例覆盖及自适应参数细化
-- [ ] 启动第 1 次真实训练并产生首个训练记录
+- [ ] 启动第 1 次真实训练并产生首个训练记录（[进度页](../practices/progress.md) 当前为未开始）
