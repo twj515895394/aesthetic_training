@@ -19,6 +19,8 @@
 - [固定主线与自适应强化](docs/10-adaptive-training.md)
 - [案例获取与积累规范](docs/11-case-acquisition.md)
 - [本地媒体管理与 GitHub 分工](docs/12-local-asset-storage.md)
+- [Markdown 元数据、标签与交叉索引](docs/13-metadata-and-indexing.md)
+- [案例索引](materials/index.md) · [知识点索引](knowledge/index.md) · [训练索引](practices/index.md)
 - [训练模板](docs/templates/README.md)
 
 ## 项目结构（持续扩展）
@@ -48,6 +50,7 @@ aesthetic_training/
 - 自适应训练采用**固定主线 + 薄弱项补练 + 逐步加难**；不破坏 12 周主题和 20–30 分钟时长。
 - 案例积累采用**小型基础候选库 + 按课即时补充**；使用后建立资料卡，保留来源与授权信息，不在开课前堆砌素材。
 - 素材采取**本地优先**：GitHub 同步 Markdown 规范、案例索引和训练笔记；原图、图片、视频、改图文件主要在本机 `local-assets/` 维护，不向 GitHub 同步大文件。
+- 检索采用 **Markdown + YAML 元数据 + 标签 + 稳定 ID + 双向链接**，可以从知识点、案例或训练记录相互查找，不需要数据库。
 
 ## 内容与版权
 
