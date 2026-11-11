@@ -6,6 +6,7 @@
 
 ## 快速入口
 
+- [本地 Agent 教学入口（AGENTS.md）](AGENTS.md)
 - [文档导航与当前进度](docs/README.md)
 - [学习目标、范围与原则](docs/01-vision-and-principles.md)
 - [12 周首轮学习路线](docs/02-roadmap-12-weeks.md)
@@ -39,7 +40,7 @@ aesthetic_training/
 
 本项目采用 **Spec-as-Learning**：记录必要共识、按实际训练积累案例和复盘。**项目保持轻量，训练素材质量与真实审美练习优先于额外工程化。**
 
-**授课执行安排（D-023）**：目前先不进行 W01-D01 试课。学员将仓库 clone 到本地，再由**本地 Agent** 依据这里的 Spec、[训练进度](practices/progress.md) 和本机 `local-assets/` 执行授课；本对话继续用于课程设计与规则确认。不要把规划或仓库修改记作已完成训练。
+**授课执行安排（D-023/D-024）**：目前先不进行 W01-D01 试课。学员将仓库 clone 到本地，再由**本地 Agent** 从 [AGENTS.md](AGENTS.md) 找到教学规范、[训练进度](practices/progress.md) 和本机 `local-assets/`，在学员主动启动后授课；本对话继续用于课程设计与规则确认。不要把规划或仓库修改记作已完成训练。**若本地工具不会自动识别 `AGENTS.md`，需要手动让 Agent 读取该文件。**
 
 ## 已确认关键约束
 
