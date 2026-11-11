@@ -16,7 +16,8 @@
 10. [10 自适应训练规范](10-adaptive-training.md)：固定 12 周主线、薄弱项复现和逐步加难。
 11. [11 案例获取与积累](11-case-acquisition.md)：基础候选库、按课补充、资料卡及来源核验。
 12. [12 本地媒体管理](12-local-asset-storage.md)：clone 到本机、`local-assets/`、`.gitignore` 防误提交及本地文件关联。
-13. [训练模板](templates/README.md)：每日训练、案例分析、知识卡、周复盘。
+13. [13 元数据与索引规范](13-metadata-and-indexing.md)：稳定 ID、YAML 标签、双向链接与索引入口。
+14. [训练模板](templates/README.md)：每日训练、案例分析、知识卡、周复盘。
 
 ## Spec-as-Learning 工作方式
 
@@ -46,6 +47,7 @@
 - [x] Grill：固定主线 + 薄弱项补练 + 逐步加难（已确认 C，D-014）
 - [x] Grill：基础案例库 + 按需补充（已确认 C，D-015）
 - [x] Grill：本地维护媒体大文件，GitHub 不同步大文件（已确认 D-016）
-- [ ] Grill：案例、知识点与训练记录的索引/标签机制（Q-007）
+- [x] Grill：Markdown 元数据 + 标签 + 交叉关联（已确认 C，D-017）
+- [ ] Grill：每日课程启动、续接、补课与复盘的交互机制（Q-008）
 - [ ] Grill：跨领域案例覆盖及自适应参数细化
 - [ ] 启动第 1 次真实训练并产生首个训练记录
