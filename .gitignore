@@ -1,0 +1,43 @@
+# 本项目的 GitHub 仓库用于 Spec、案例卡、知识卡和训练记录。
+# 媒体素材默认在 clone 后的本地维护，不提交到 GitHub（D-016）。
+/local-assets/
+
+# 防止在其他目录误提交常见图片、视频、音频、设计源文件与打包素材。
+# 如未来明确批准公开某个轻量预览文件，需单独审核来源/许可后显式解除忽略。
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.avif
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.heic
+*.psd
+*.psb
+*.kra
+*.ai
+*.exr
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.m4v
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.aiff
+*.blend
+*.zip
+*.7z
+*.rar
+
+# 系统与编辑器临时文件
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
