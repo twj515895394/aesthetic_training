@@ -9,6 +9,7 @@ license: unknown
 rights_note: "未验证再分发权限：仅保存链接和原创笔记"
 related_concepts: []
 related_sessions: []
+local_media: [] # 示例：["local-assets/classic/case-0001/original.jpg"]；本地文件不在远端
 status: draft
 ---
 
@@ -27,7 +28,8 @@ status: draft
 - 作者 / 年代 / 作品来源：
 - 可核验的原始出处（不清楚则标记待核验）：
 - 版权或许可及证据：
-- 本仓库是否收录图片：否 / 是（说明合法再分发依据；文件存储方式由 Q-006 决定）
+- 本机媒体相对路径（可选；例如 `local-assets/classic/case-0001/original.jpg`）：
+- GitHub 仅记录资料卡和可分享的来源 URL；本机媒体不上传（D-016）。
 
 ## 观察
 
