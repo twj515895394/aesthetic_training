@@ -1,6 +1,6 @@
 # 05｜素材、案例、知识与实践资产管理规范
 
-状态：**小型基础候选库 + 按课补充（D-015）和本地优先媒体存储（D-016）均已确认**；部分标签/字段及跨文件索引仍待 Q-007。
+状态：**小型基础候选库 + 按课补充（D-015）、本地优先媒体存储（D-016）、Markdown 元数据+标签+交叉关联（D-017）均已确认**；字段细则与后续自动化仍可迭代。
 
 ## 1. 存储目标
 
@@ -45,7 +45,17 @@ aesthetic_training/
 
 具体协议见 [11 案例获取与积累](11-case-acquisition.md)。媒体存储已经按 D-016 定案为**本地优先**，详见 [12 本地媒体管理](12-local-asset-storage.md)。
 
-## 4. 命名方案（建议）
+## 4. 知识、案例与练习检索（D-017 已确认）
+
+- **稳定 ID + YAML 元数据**：案例 ID 如 `case-0001`、知识卡 ID 如 `visual-focus`、每日训练 ID 如 `W01-D01`。ID 独立于 Markdown 文件名和本机媒体路径。
+- **检索标签与跨领域关系**：案例使用 `domain`、`tags`、`related_concepts`、`related_sessions`；知识卡使用 `cases`、`sessions`；每日记录包含 `main_case_id`、`compare_case_id` 和 `related_concepts`。
+- **双向关联**：元数据保存关联 ID；正文为**已存在的**案例、知识卡和训练笔记建立可点击的相对 Markdown 链接；实际入库后再更新反向链接。
+- **三个索引入口**：[案例](../materials/index.md)、[知识](../knowledge/index.md)、[训练](../practices/index.md)，以目录+全文搜索起步，不引入数据库或新的索引服务。
+- **本地媒体例外**：只在文档记录 `local_media` 的仓库根目录相对路径；远端不会显示/同步本机文件；原始作品来源 URL 可独立保存。
+
+详见 [13 元数据与索引规范](13-metadata-and-indexing.md)。字段名与标签枚举为首版实现建议，具体可随素材使用情况调整。
+
+## 5. 命名方案（建议）
 
 - 每日记录：`practices/daily/W01-D01-visual-focus.md`
 - 经典案例：`materials/classic/vermeer-the-milkmaid.md`
@@ -56,7 +66,7 @@ aesthetic_training/
 
 路径尽量使用简短的英文或拼音，正文用中文。不要把“已确认”写进无时间概念的素材文件名。
 
-## 5. 必需的案例元数据（建议）
+## 6. 必需的案例元数据（建议）
 
 ```yaml
 ---
@@ -64,6 +74,7 @@ id: case-0001
 title: The Milkmaid
 creator: Johannes Vermeer
 domain: painting
+tags: [visual-focus, lighting]
 source_url: https://...
 license: link-only
 rights_note: "仅保存原作链接与自写分析，未引入原作图片"
@@ -77,13 +88,13 @@ status: draft
 
 建议许可值：`link-only`（仅链接），`public-domain`，`cc0`，`cc-by`（需满足署名），`own-work`，`permission-granted`，`unknown`（不提交原图）。不要将网站可浏览或可下载等同于可重新发布。
 
-## 6. 案例与训练的关联关系
+## 7. 案例与训练的关联关系
 
 `case.id` ← `session.main_case_id / compare_case_id` → `experiment.id` → `knowledge.concept_id` → `review.week`
 
 一张案例可复用在不同周，但保留每次观察记录；案例卡沉淀原作出处，训练卡保存当时任务与学习者结论。
 
-## 7. 媒体文件本地优先（已确认 D-016）
+## 8. 媒体文件本地优先（已确认 D-016）
 
 - **GitHub**：保留 Spec、案例/训练/知识 Markdown 以及可公开的链接与元数据；不将其当作图片、音视频原始素材库。
 - **本地**：clone 后在根目录创建 `local-assets/`，保存可合法持有的原始素材、标注、裁切、调色、AI 实验、视频与音频；该目录被 `.gitignore` 排除。
@@ -94,7 +105,7 @@ status: draft
 
 完整说明：[12 本地媒体管理](12-local-asset-storage.md)。
 
-## 8. 双层训练档案入库（已确认原则，D-012）
+## 9. 双层训练档案入库（已确认原则，D-012）
 
 1. 学员在练习中自然记录自己的观察、依据、选择和自评，不要求课后手工补写完整报告。
 2. AI 根据当次真实对话与可验证素材整理详细 Markdown 草稿，保留个人观察与教练分析的来源分层。
@@ -102,7 +113,7 @@ status: draft
 4. 学员审核草稿后再入库；不把 AI 草稿直接视作最终学习成果。
 5. 精确字段、自动化提交方式、版本化细则仍可根据实践量进一步讨论。
 
-## 9. 最小入库检查（建议）
+## 10. 最小入库检查（建议）
 
 - [ ] 标题、领域、作者/未知、出处链接
 - [ ] 授权/版权状态明确
