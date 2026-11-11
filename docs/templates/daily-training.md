@@ -10,7 +10,9 @@ local_media: [] # 本机相对路径；不推送 GitHub
 main_case_id: case-0001
 compare_case_id: case-0002
 practice_level: L1
-status: draft
+status: not_started # 使用时按实际状态：not_started / in_progress / pending_review / completed
+last_completed_step: null
+pending_steps: [] # 暂停时据实记录，不凭空补全
 ---
 
 # W01-D01｜训练主题
@@ -24,6 +26,16 @@ status: draft
 - 相关知识点卡：
 - 参考作品可公开的来源 URL：
 - 本地素材路径（可选）：
+
+## 进度与恢复点（D-018）
+
+- 这次实际学习日期：
+- 已完成步骤（只填确实完成的）：
+- 尚未完成步骤：
+- 若暂停，下次恢复的第一项：
+- 归档与学员审核状态：
+
+> `W01-D01` 是课程编号，不是必须在某个自然日期完成。只有学员审核本次真实训练记录并成功归档后，才将状态标为 `completed`，同步更新 `practices/progress.md`。见 [课程会话规范](../14-session-and-progress.md)。
 
 ## 今日目标
 
